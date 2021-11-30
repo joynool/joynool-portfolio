@@ -1,22 +1,26 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
-import About from './pages/About';
-import Contact from './pages/Contact';
 import Footer from './pages/Footer';
+import Home from './pages/Home';
 import Navbar from './pages/Navbar';
-import Projects from './pages/Projects';
-import Skills from './pages/Skills';
+import ProjectsDetails from './pages/ProjectsDetails';
 
 function App ()
 {
   return (
-    <main className="text-gray-400 bg-gray-900 body-font">
+    <BrowserRouter>
       <Navbar />
-      <About />
-      <Projects />
-      <Skills />
-      <Contact />
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+      <Routes>
+        <Route path="/home" element={<Home />} />
+      </Routes>
+      <Routes>
+        <Route path="/project/:id" element={<ProjectsDetails />} />
+      </Routes>
       <Footer />
-    </main>
+    </BrowserRouter>
   );
 }
 

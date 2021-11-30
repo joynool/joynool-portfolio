@@ -9,7 +9,7 @@ const About = () =>
                 <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
                     <h1 className="title-font sm:text-4xl text-3xl mb-4 font-light text-white">
                         Hi, my name is <span className="font-semibold">Sk. Md. Joynul Abedin</span>
-                        <br className="hidden lg:inline-block" />I'm a Web Developer
+                        <br />I'm a Web Developer
                     </h1>
                     <p className="mb-8 leading-relaxed text-2xl font-light text-white italic">
                         Have an incredible design that needs to be transformed into a website?
@@ -31,6 +31,7 @@ const About = () =>
                         </a>
                         <a
                             target="_blank"
+                            rel="noreferrer"
                             href="https://drive.google.com/file/d/1qtBy6cxbJYR-eOdVZnUBC1fdcJlly6ke/view?usp=sharing"
                             className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">
                             See My Resume

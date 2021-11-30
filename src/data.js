@@ -1,5 +1,6 @@
 export const projects = [
     {
+        id: 1,
         title: "Water Drops – Reusable water bottle selling website",
         subtitle: "React, React-bootstrap, Firebase, Node, Express & MongoDB",
         description:
@@ -8,6 +9,7 @@ export const projects = [
         link: "https://water-drops-8e4f3.web.app/",
     },
     {
+        id: 2,
         title: "Picnic In Heaven – Picnic spot booking website",
         subtitle: "React, React-bootstrap, Firebase, Node, Express & MongoDB",
         description:
@@ -16,6 +18,7 @@ export const projects = [
         link: "https://picnic-in-heaven.web.app/",
     },
     {
+        id: 3,
         title: "Fitness Club – Gym services website",
         subtitle: "React & Firebase",
         description:
@@ -24,7 +27,8 @@ export const projects = [
         link: "https://fitness-club-5b37c.web.app/",
     },
     {
-        title: "The Talk Show Direction",
+        id: 4,
+        title: "Talk Show Direction - talk show budget calculation",
         subtitle: "React & React Router",
         description:
             "This site represents a talk show cost calculation. You can add your favorite author based on our data. Under our show budget, you can add one person only one time with a maximum of 12 people. Simple design with fully responsive for mobile devices and desktops.",

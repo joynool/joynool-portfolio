@@ -1,6 +1,7 @@
 import React from 'react'
 import { CodeIcon } from "@heroicons/react/solid";
 import { projects } from "../data";
+import { Link } from 'react-router-dom';
 
 const Projects = () =>
 {
@@ -18,10 +19,8 @@ const Projects = () =>
                 </div>
                 <div className="flex flex-wrap -m-4">
                     {projects.map((project) => (
-                        <a
-                            href={project.link}
-                            target="_blank"
-                            key={project.image}
+                        <div
+                            key={project.id}
                             className="sm:w-1/2 w-100 p-4">
                             <div className="flex relative">
                                 <img
@@ -29,17 +28,17 @@ const Projects = () =>
                                     className="absolute inset-0 w-full h-full object-cover object-center"
                                     src={project.image}
                                 />
-                                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
+                                <div className="px-8 py-24 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
                                     <h2 className="tracking-widest text-sm title-font font-medium text-green-400 mb-1">
                                         {project.subtitle}
                                     </h2>
                                     <h1 className="title-font text-lg font-medium text-white mb-3">
                                         {project.title}
                                     </h1>
-                                    <p className="leading-relaxed">{project.description}</p>
+                                    <Link to={`/project/${project.id}`} className="inline-flex text-white bg-green-500 border-0 py-1 px-4 focus:outline-none hover:bg-green-600 rounded text-lg">Project Details</Link>
                                 </div>
                             </div>
-                        </a>
+                        </div>
                     ))}
                 </div>
             </div>
