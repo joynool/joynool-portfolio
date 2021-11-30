@@ -21,7 +21,7 @@ const Navbar = () =>
                     <Link to="/blogs" className="mr-5 hover:text-white">
                         Blogs
                     </Link>
-                    <a target="_blank" rel="noreferrer" href="https://drive.google.com/file/d/1qtBy6cxbJYR-eOdVZnUBC1fdcJlly6ke/view?usp=sharing" className="mr-5 hover:text-white">
+                    <a rel="noreferrer" href="https://drive.google.com/u/0/uc?id=1qtBy6cxbJYR-eOdVZnUBC1fdcJlly6ke&export=download" className="mr-5 hover:text-white">
                         Download Resume
                     </a>
                 </nav>

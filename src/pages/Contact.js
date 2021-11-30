@@ -16,7 +16,7 @@ const Contact = () =>
             <div className="flex justify-center items-center px-5 py-10">
                 <form
                     onSubmit={sendEmail}
-                    className="lg:w-2/3 md:w-1/2 flex flex-col w-full md:px-8 md:py-8 mt-8 md:mt-0 border-2 rounded-lg">
+                    className="lg:w-2/3 md:w-1/2 flex flex-col w-full md:px-8 md:py-8 mt-8 md:mt-0 border-2 rounded-lg wow animate__animated animate__fadeInUp">
                     <h2 className="text-white sm:text-4xl text-3xl mb-1 font-medium title-font text-center">
                         Hire Me
                     </h2>

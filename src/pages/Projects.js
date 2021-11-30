@@ -22,7 +22,7 @@ const Projects = () =>
                         <div
                             key={project.id}
                             className="sm:w-1/2 w-100 p-4">
-                            <div className="flex relative">
+                            <div className="flex relative wow animate__animated animate__zoomIn">
                                 <img
                                     alt="gallery"
                                     className="absolute inset-0 w-full h-full object-cover object-center"
