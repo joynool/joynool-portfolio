@@ -11,30 +11,47 @@ const ProjectsDetails = () =>
     return (
         <section className="text-gray-400 bg-gray-900 body-font">
             <div className="container px-5 py-10 mx-auto text-center lg:px-40">
-                <div className="flex flex-col w-full mb-20">
+                <div className="flex flex-col w-full mb-5">
                     <CodeIcon className="mx-auto inline-block w-10 mb-4" />
-                    <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-white">
-                        Websites I've Built
+                    <h1 className="sm:text-4xl text-3xl font-medium title-font mb-5 text-white">
+                        {project.title}
                     </h1>
                 </div>
-                <div className="flex flex-wrap -m-4">
-                    <div
-                        className="sm:w-1/2 w-100 p-4">
-                        <div className="flex relative">
+                <div className="grid md:grid-cols-2 sm:grid-cols-1 gap-5">
+                    <div className="transition duration-500 transform hover:scale-105 wow animate__animated animate__fadeInLeft">
+                        <img
+                            alt="gallery"
+                            className="w-full h-full object-cover object-center"
+                            src={project.imgOne}
+                        />
+                    </div>
+                    <div className="grid grid-rows-2 gap-4 wow animate__animated animate__fadeInRight">
+                        <div className="transition duration-500 transform hover:scale-105">
                             <img
                                 alt="gallery"
-                                className="absolute inset-0 w-full h-full object-cover object-center"
-                                src={project.image}
+                                className="w-full object-cover object-center"
+                                src={project?.imgTwo}
                             />
-                            <div className="px-8 py-24 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
-                                <h2 className="tracking-widest text-sm title-font font-medium text-green-400 mb-1">
-                                    {project.subtitle}
-                                </h2>
-                                <h1 className="title-font text-lg font-medium text-white mb-3">
-                                    {project.title}
-                                </h1>
-                                <a href="/" className="inline-flex text-white bg-green-500 border-0 py-1 px-4 focus:outline-none hover:bg-green-600 rounded text-lg">Project Details</a>
+                        </div>
+                        <div className="flex flex-col justify-center items-center">
+                            <h2 className="tracking-widest text-2xl title-font font-light text-green-400 mb-5">
+                                Technologies Used: {project.subtitle}
+                            </h2>
+                            <h1 className="title-font text-lg font-medium text-white mb-3">
+                                {project.description}
+                            </h1>
+                            <div className="flex my-5">
+                                <a href={project.link} target="_blank" rel="noreferrer" className="text-white bg-gray-700 mx-auto border-0 py-2 px-2 mr-5 focus:outline-none hover:bg-gray-600 rounded text-md">Live Site</a>
+                                <a href={project.front} target="_blank" rel="noreferrer" className="text-white bg-gray-700 mx-auto border-0 py-2 px-2 mr-5 focus:outline-none hover:bg-gray-600 rounded text-md">Front-End</a>
+                                <a href={project.back} target="_blank" rel="noreferrer" className="text-white bg-gray-700 mx-auto border-0 py-2 px-2 focus:outline-none hover:bg-gray-600 rounded text-md">Back-End</a>
                             </div>
+                        </div>
+                        <div className="transition duration-500 transform hover:scale-105">
+                            <img
+                                alt="gallery"
+                                className="w-full object-cover object-center"
+                                src={project?.imgThree}
+                            />
                         </div>
                     </div>
                 </div>

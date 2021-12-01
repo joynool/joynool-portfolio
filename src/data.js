@@ -6,7 +6,12 @@ export const projects = [
         description:
             "As a user, you can explore all products, order them, cancel the order and review them after successful registration or login. Admin has full power to add or delete any products, shipped or delete any orders, and also access to make new admin from any existing user.",
         image: "https://i.ibb.co/RvkmLMv/waterdrops.png",
+        imgOne: "https://i.ibb.co/dM7cpLw/water-one.jpg",
+        imgTwo: "https://i.ibb.co/KWK8FJM/water-two.jpg",
+        imgThree: "https://i.ibb.co/rkgm3Js/water-three.jpg",
         link: "https://water-drops-8e4f3.web.app/",
+        front: "https://github.com/joynool/water-drops-client-side",
+        back: "https://github.com/joynool/water-drops-server-side",
     },
     {
         id: 2,
@@ -15,7 +20,12 @@ export const projects = [
         description:
             "The main goal of this site is you can explore picnic-related services and book them. After successful registration or login, you can check, cancel, and approve your booked order. Fully responsive for mobile devices and desktops with user-friendly UI.",
         image: "https://i.ibb.co/VYH2dHt/picnic.png",
+        imgOne: "https://i.ibb.co/n3rsppk/picnic-one.jpg",
+        imgTwo: "https://i.ibb.co/HGQFXLN/picnic-two.jpg",
+        imgThree: "https://i.ibb.co/1Qmqm3Q/picnic-three.jpg",
         link: "https://picnic-in-heaven.web.app/",
+        front: "https://github.com/joynool/picnic-in-heaven-client-side",
+        back: "https://github.com/joynool/picnic-in-heaven-server-side",
     },
     {
         id: 3,
@@ -24,7 +34,12 @@ export const projects = [
         description:
             "This site represents fitness club gym services with a membership facility. If you want to check out the details service or the free offer,you must be successfully registered or logged in. Without registering or login you can visit the home page and service page only.",
         image: "https://i.ibb.co/1fttTsv/fitness.png",
+        imgOne: "https://i.ibb.co/JrY5bMR/fitness-one.jpg",
+        imgTwo: "https://i.ibb.co/gyPXFvP/fitness-two.jpg",
+        imgThree: "https://i.ibb.co/tPS0Mtp/fitness-three.jpg",
         link: "https://fitness-club-5b37c.web.app/",
+        front: "https://github.com/joynool/healthcare-related-website",
+        back: "https://github.com/joynool/healthcare-related-website",
     },
     {
         id: 4,
@@ -33,6 +48,11 @@ export const projects = [
         description:
             "This site represents a talk show cost calculation. You can add your favorite author based on our data. Under our show budget, you can add one person only one time with a maximum of 12 people. Simple design with fully responsive for mobile devices and desktops.",
         image: "https://i.ibb.co/SPHk4NG/talkshow.png",
+        imgOne: "https://i.ibb.co/5MkMRHH/talk-one-2.jpg",
+        imgTwo: "https://i.ibb.co/Kx4w845/talk-two-1.jpg",
+        imgThree: "https://i.ibb.co/cT9LMN4/talk-two-2.jpg",
         link: "https://talk-show-direction.netlify.app/",
+        front: "https://github.com/joynool/the-superhero-direction",
+        back: "https://github.com/joynool/the-superhero-direction",
     },
 ];
