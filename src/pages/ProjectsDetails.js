@@ -33,7 +33,7 @@ const ProjectsDetails = () =>
                                 src={project?.imgTwo}
                             />
                         </div>
-                        <div className="flex flex-col justify-center items-center">
+                        <div className="flex flex-col justify-center items-center p-5">
                             <h2 className="tracking-widest text-2xl title-font font-light text-green-400 mb-5">
                                 Technologies Used: {project.subtitle}
                             </h2>
