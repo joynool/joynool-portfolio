@@ -1,5 +1,6 @@
 import React from 'react'
 import emailjs from 'emailjs-com';
+import Swal from 'sweetalert2';
 
 const Contact = () =>
 {
@@ -7,7 +8,16 @@ const Contact = () =>
     {
         e.preventDefault();
         emailjs.sendForm('service_2ifmj29', 'template_ervlmdf', e.target, 'user_ld8ZnYI1s2eCzu8Mgj7Hi')
-            .then(res => console.log(res))
+            .then(res =>
+            {
+                console.log(res);
+                Swal.fire(
+                    'Thank You!',
+                    'Your message successfully delivered!',
+                    'success'
+                );
+                e.target.reset();
+            })
             .catch(err => console.log(err));
     }
 
@@ -32,6 +42,7 @@ const Contact = () =>
                             id="name"
                             name="name"
                             className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                            required
                         />
                     </div>
                     <div className="relative mb-4">
@@ -43,6 +54,7 @@ const Contact = () =>
                             id="email"
                             name="email"
                             className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                            required
                         />
                     </div>
                     <div className="relative mb-4">
@@ -55,6 +67,7 @@ const Contact = () =>
                             id="message"
                             name="message"
                             className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                            required
                         />
                     </div>
                     <button
